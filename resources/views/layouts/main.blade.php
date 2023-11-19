@@ -16,6 +16,17 @@
 
     </head>
     <body class="antialiased">
+        <header>
+            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Laravel Pokedéx</a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                  </form>
+                </div>
+              </nav>
+        </header>
         <main>
             <div class="container-fluid">
                 @yield('content')
