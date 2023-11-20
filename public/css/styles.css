@@ -1,0 +1,55 @@
+/*Gerais*/
+body{
+    background-color: #EBE3D5;
+}
+
+/*Pokecards Style*/
+.card{
+    width: 18em;
+    height: 28em;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #CD1818;
+    transition: 0.25s ease;
+}
+
+.card:hover{
+    position: absolute;
+    width: 19em;
+    height: 28.5em;
+}
+
+.card img{
+    border: 2px solid black;
+    align-self: center;
+    border-radius: 10px;
+    width: 16em;
+    margin-top: 15px;
+    background-color: #EBE3D5;
+}
+
+.card .card-body{
+    justify-content: left;
+    color: white;
+}
+
+.card .btn{
+    border: none;
+    background-color: #260a0a;
+    color: white;
+}
+
+.card .circles-container{
+    display: flex;
+    margin: 2vh 0 0 2vw;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.card .circles-container .circle{
+    width: 1.1em;
+    height: 1.1em;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: white;
+} 
