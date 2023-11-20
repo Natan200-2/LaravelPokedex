@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $pokemon['name'] }}</h5>
                     <p class="card-text">{{ implode(' | ',$pokemon['types'])}}</p>
-                    <a href="#" class="btn">Mais detalhes</a>
+                    <a href="/pokemon/{{$pokemon['id']}}" class="btn">Mais detalhes</a>
                 </div>
             </div>
         </div>

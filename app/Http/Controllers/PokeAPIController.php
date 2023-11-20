@@ -27,6 +27,7 @@ class PokeAPIController extends Controller
 
     
             return [
+                'id' => $pokemonId,
                 'image_url' => $imageUrl,
                 'name' => $pokemon['name'],
                 'types' => $types,
@@ -53,12 +54,14 @@ class PokeAPIController extends Controller
         return response()->json($data);
     }
 
-    public function getAllPokemons(){
+    public function showPokemon($id){
         $client = new Client();
-        $response = $client->request('GET','', ['verify' => false]);
+        $response = $client->request('GET','https://pokeapi.co/api/v2/pokemon/'. $id, ['verify' => false]);
 
-        $data = json_decode($response->getBody(), true);
+        $imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{$id}.png";
 
-        return response()->json($data);
+        $pokemon = json_decode($response->getBody(), true);
+
+        return view('showPokemon', ['pokemon'=> $pokemon, 'image'=> $imageUrl]);
     }
 }
