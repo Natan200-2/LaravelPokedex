@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PokeAPIController::class,'index']);
 
-Route::get('/pokemon/{name}', [PokeAPIController::class, 'getPokemon']);
+Route::get('/pokemon/{id}', [PokeAPIController::class,'show']);
