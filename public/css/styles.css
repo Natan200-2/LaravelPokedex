@@ -10,8 +10,9 @@ body{
     border: 2px solid black;
     border-radius: 20px;
     background-color: #CD1818;
-    transition: 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, z-index 0.25s ease;
 }
+
 
 .col .card:hover{
     position: absolute;
