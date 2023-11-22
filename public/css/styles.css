@@ -4,19 +4,19 @@ body{
 }
 
 /*Pokecards Style*/
-.card{
+.card {
     width: 18em;
     height: 28em;
     border: 2px solid black;
     border-radius: 20px;
     background-color: #CD1818;
-    transition: 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, z-index 0.25s ease;
 }
 
-.card:hover{
-    position: absolute;
-    width: 19em;
-    height: 28.5em;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.704);
+    z-index: 1;
 }
 
 .card img{
