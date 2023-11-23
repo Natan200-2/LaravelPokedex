@@ -1,5 +1,6 @@
 /*Gerais*/
 body{
+    align-items: center;
     background-color: #EBE3D5;
 }
 
@@ -56,6 +57,28 @@ body{
 } 
 
 /*Pokemon view*/
-.card .mb-3{
-    align-items: center;
+
+div .details{
+    display: flex;
+    justify-content: center;
+}
+
+ div .custom-card{
+    margin-top: 5vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #FFF5E0;
+
+}
+
+.col-md-4 img{
+    width: 100vw;
+    border: 1px solid black;
+    border-radius: 19px;
+    background-color: #FFF5E0;
+}
+
+.moves button .btn .details-btn{
+    width: 100px;
+    background-color: #260a0a;
 }
