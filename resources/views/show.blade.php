@@ -21,7 +21,7 @@
             <div class="moves">
               <h6 class="card-subtitle mb-2 text-body-secondary">Moves: </h6>
               <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoves" aria-expanded="false" aria-controls="collapseMoves">
+                <button class="btn btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoves" aria-expanded="false" aria-controls="collapseMoves">
                   Moves 
                 </button>
               </p>
@@ -40,7 +40,7 @@
             <div class="Locations">
               <h6 class="card-subtitle mb-2 text-body-secondary">Locations: </h6>
               <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocations" aria-expanded="false" aria-controls="collapseLocations">
+                <button class="btn btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocations" aria-expanded="false" aria-controls="collapseLocations">
                   Locations 
                 </button>
               </p>  

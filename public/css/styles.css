@@ -77,3 +77,8 @@ div .details{
     border-radius: 19px;
     background-color: #FFF5E0;
 }
+
+.btn-custom{
+    background-color: #141E46;
+    color: wheat;
+}
