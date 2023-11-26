@@ -104,6 +104,7 @@ div .details{
     background-color: #FFF5E0;
 }
 
+/*background-colors types*/
 .normal{
     background: rgb(143,143,143);
     background: linear-gradient(0deg, rgba(143,143,143,1) 0%, rgba(225,226,221,1) 37%, rgba(222,238,223,1) 95%);
