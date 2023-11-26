@@ -7,7 +7,7 @@
   <div class="card mb-2 custom-card" style="max-width: 95vw;">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="{{$image}}" class="img-fluid" alt="{{$pokemon['name']}}">
+          <img src="{{$image}}" class="img-fluid {{strtolower($types[0])}}" alt="{{$pokemon['name']}}">
         </div>
         <div class="col-md-8">
           <div class="card-body">
