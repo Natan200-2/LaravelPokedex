@@ -73,7 +73,7 @@ div .details{
 
 .col-md-4 img{
     width: 100vw;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 19px;
     background-color: #FFF5E0;
 }
@@ -81,4 +81,25 @@ div .details{
 .btn-custom{
     background-color: #141E46;
     color: #FFF5E0;
+    transition: border ease-in-out 0.25s, color ease-in-out 0.25s, background-color ease-in-out 0.25s;
+}
+
+.btn-custom:hover{
+    border: 1px solid #141E46;
+    color: #141E46;
+}
+
+.stats{
+    margin: 5px 5px 25px 5px;
+}
+
+.name{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.locations{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #FFF5E0;
 }

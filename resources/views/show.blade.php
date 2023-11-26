@@ -11,41 +11,45 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h3 class="card-title">{{$pokemon['name']}}</h3>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Abilities: </h6>
-            <p class="card-text">
-              {{implode ( ' | ', $abilities)}}</p>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Type: </h6>
-            <p class="card-text">
-              {{implode ( ' | ', $types)}}</p>
-            <div class="moves">
-              <h6 class="card-subtitle mb-2 text-body-secondary">Moves: </h6>
-              <p class="d-inline-flex gap-1">
-                <button class="btn btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoves" aria-expanded="false" aria-controls="collapseMoves">
-                  Moves 
-                </button>
-              </p>
-              <div class="collapse" id="collapseMoves" style="margin-bottom: 10px;">
-                <div class="card card-body">
-                  <div class="row row-cols-1 row-cols-md-6 g-4">
-                    @foreach ($moves as $move)
-                    <div class="col">
-                      <p>-{{$move}}</p>
-                    </div>
-                    @endforeach
-                  </div>
-                </div>
+            <h3 class="card-title name">{{$pokemon['name']}}</h3>
+            <div class="row stats">
+              <div class="col">
+                <h6 class="card-subtitle mb-2 text-body-secondary">Type: </h6>
+                <p class="card-text">
+                  {{implode ( ' | ', $types)}}</p>                    
+              </div>
+              <div class="col">
+                <h6 class="card-subtitle mb-2 text-body-secondary">Abilities: </h6>
+                <p class="card-text">
+                  {{implode ( ' | ', $abilities)}}</p>                    
               </div>
             </div>
-            <div class="Locations">
-              <h6 class="card-subtitle mb-2 text-body-secondary">Locations: </h6>
+            <div class="row stats">
+              <div class="col">
+                <h6 class="card-subtitle mb-2 text-body-secondary">HP:</h6>
+                <p class="card-text">{{$hp}}</p>
+              </div>
+              <div class="col">
+                <h6 class="card-subtitle mb-2 text-body-secondary">Attack:</h6>
+                <p class="card-text">{{$attack}}</p>
+              </div>
+              <div class="col">
+                <h6 class="card-subtitle mb-2 text-body-secondary">Defense:</h6>
+                <p class="card-text">{{$defense}}</p> 
+              </div>
+              <div class="col">
+                <h6 class="card-subtitle mb-2 text-body-secondary">Speed:</h6>
+                <p class="card-text">{{$speed}}</p>
+              </div>
+            </div>
+            <div class="locations-container">
               <p class="d-inline-flex gap-1">
                 <button class="btn btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocations" aria-expanded="false" aria-controls="collapseLocations">
                   Locations 
                 </button>
               </p>  
               <div class="collapse" id="collapseLocations" style="margin-bottom: 10px;">
-                <div class="card card-body">
+                <div class="card card-body locations">
                   <div class="row row-cols-1 row-cols-md-3 g-4">                
                     @forelse ($locations as $location)
                     <div class="col">
