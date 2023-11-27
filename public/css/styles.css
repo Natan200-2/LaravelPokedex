@@ -1,4 +1,11 @@
 /*Gerais*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+*{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
 body{
     align-items: center;
     background-color: #EBE3D5;
@@ -31,7 +38,6 @@ body{
 }
 
 .col .card .card-body{
-    justify-content: left;
     color: white;
 }
 

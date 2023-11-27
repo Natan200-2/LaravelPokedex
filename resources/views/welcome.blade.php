@@ -3,7 +3,7 @@
 @section('title', 'Início')
 
 @section('content')
-    <h1>Lista de Pokémons</h1>
+    <h1>Pokemon List</h1>
 
     @if(isset($pokemonDetails))
     
@@ -20,7 +20,7 @@
                <div class="card-body">
                     <h5 class="card-title">{{ $pokemon['name'] }}</h5>
                     <p class="card-text">{{ implode(' | ', $pokemon['types']) }}</p>
-                    <a href="/pokemon/{{$pokemon['id']}}" class="btn">Mais detalhes</a>
+                    <a href="/pokemon/{{$pokemon['id']}}" class="btn">About</a>
                 </div>
             </div>
         </div>
