@@ -3,7 +3,7 @@
 @section('title', 'Início')
 
 @section('content')
-    <h1>Lista de Pokémons</h1>
+    <h1>Pokemon List</h1>
 
     @if(isset($pokemonDetails))
     
@@ -16,11 +16,11 @@
                     <div class="circle" style="background-color: #F4CE14"></div>
                     <div class="circle" style="background-color: #0c9e49"></div>
                 </div>
-                <img src='{{ $pokemon['image_url'] }}' class="card-img-top" alt="{{ $pokemon['name'] }}">
-                <div class="card-body">
+                    <img src='{{ $pokemon['image_url'] }}' class="card-img-top {{strtolower($pokemon['types'][0])}}" alt="{{ $pokemon['name'] }}">
+               <div class="card-body">
                     <h5 class="card-title">{{ $pokemon['name'] }}</h5>
-                    <p class="card-text">{{ implode(' | ',$pokemon['types'])}}</p>
-                    <a href="/pokemon/{{$pokemon['id']}}" class="btn">Mais detalhes</a>
+                    <p class="card-text">{{ implode(' | ', $pokemon['types']) }}</p>
+                    <a href="/pokemon/{{$pokemon['id']}}" class="btn">About</a>
                 </div>
             </div>
         </div>
