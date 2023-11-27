@@ -56,7 +56,7 @@ body{
     background-color: white;
 } 
 
-/*Pokemon view*/
+/*Pokemon show view*/
 
 div .details{
     display: flex;
@@ -124,6 +124,40 @@ div .details{
 
 .info{
     font-size: 18px;
+}
+
+.progress{
+    background-color: #adadad;
+}
+
+.stats-container{
+    border: 2px solid black;
+    margin: 10px 5px;
+    border-radius: 15px;
+}
+
+.title-stats{
+    margin: 2px 0px 10px 0px;
+}
+
+.stats-info{
+    margin-top: 5px;
+}
+
+.hp{
+    background-color: #00DFA2;
+}
+
+.attack{
+    background-color: #B31312;
+}
+
+.defense{
+    background-color: #3081D0;
+}
+
+.speed{
+    background-color: #29ADB2;
 }
 
 /*background-colors types*/

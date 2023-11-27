@@ -26,33 +26,33 @@
             </div>
             <div class="row stats-container">
               <div class="col stats">
-                <h6 class="card-subtitle">HP:</h6>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="{{$hp}}" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: {{$hp}}%"></div>
+                <h6 class="card-subtitle title-stats">HP:</h6>
+                <div class="progress" role="progressbar" aria-label="hp" aria-valuenow="{{$hp}}" aria-valuemin="0" aria-valuemax="200" style="height: 10px">
+                  <div class="progress-bar hp" style="width: {{$hp/200 * 100}}%"></div>
                 </div>
-                <p class="card-text">{{$hp}}</p>
+                <p class="card-text stats-info">{{$hp}}</p>
               </div>
               <div class="col stats">
-                <h6 class="card-subtitle">Attack:</h6>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="{{$attack}}" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: {{$attack}}%"></div>
+                <h6 class="card-subtitle title-stats">Attack:</h6>
+                <div class="progress" role="progressbar" aria-label="attack" aria-valuenow="{{$attack}}" aria-valuemin="0" aria-valuemax="200" style="height: 10px">
+                  <div class="progress-bar attack" style="width: {{$attack/200 * 100}}%"></div>
                 </div>
 
-                <p class="card-text">{{$attack}}</p>
+                <p class="card-text stats-info">{{$attack}}</p>
               </div>
               <div class="col stats">
-                <h6 class="card-subtitle">Defense:</h6>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="{{$defense}}" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: {{$defense}}%"></div>
+                <h6 class="card-subtitle title-stats">Defense:</h6>
+                <div class="progress" role="progressbar" aria-label="defense" aria-valuenow="{{$defense}}" aria-valuemin="0" aria-valuemax="200" style="height: 10px">
+                  <div class="progress-bar defense" style="width: {{$defense/200 * 100}}%"></div>
                 </div>
-                <p class="card-text">{{$defense}}</p> 
+                <p class="card-text stats-info">{{$defense}}</p> 
               </div>
               <div class="col stats">
-                <h6 class="card-subtitle">Speed:</h6>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="{{$speed}}" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: {{$speed}}%"></div>
+                <h6 class="card-subtitle title-stats">Speed:</h6>
+                <div class="progress" role="progressbar" aria-label="speed" aria-valuenow="{{$speed}}" aria-valuemin="0" aria-valuemax="200" style="height: 10px">
+                  <div class="progress-bar speed" style="width: {{$speed/200 * 100}}%"></div>
                 </div>
-                <p class="card-text">{{$speed}}</p>
+                <p class="card-text stats-info">{{$speed}}</p>
               </div>
             </div>
             <div class="locations-container">
