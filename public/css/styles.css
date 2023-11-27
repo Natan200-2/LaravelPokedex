@@ -95,14 +95,14 @@ div .details{
 }
 
 .btn-custom{
-    background-color: #141E46;
+    background-color: #260a0a;
     color: #FFF5E0;
     transition: border ease-in-out 0.25s, color ease-in-out 0.25s, background-color ease-in-out 0.25s;
 }
 
 .btn-custom:hover{
-    border: 1px solid #141E46;
-    color: #141E46;
+    border: 1px solid #260a0a;
+    color: #260a0a;
 }
 
 .stats{
