@@ -12,7 +12,7 @@ class PokeAPIController extends Controller
     public function index(){
         $client = new Client();
         try{
-            $response = $client->request("GET", "https://pokeapi.co/api/v2/pokemon?limit=15", ['verify' => false]);
+            $response = $client->request("GET", "https://pokeapi.co/api/v2/pokemon?limit=151", ['verify' => false]);
             $data = json_decode($response->getBody(), true);
         
             $pokemonDetails = collect($data['results'])->map(function ($pokemon) use ($client) {

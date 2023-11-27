@@ -4,10 +4,10 @@
 
 @section('content')
 <div class="details">
-  <div class="card mb-2 custom-card {{strtolower($types[0])}}" style="max-width: 95vw;">
+  <div class="card mb-2 custom-card {{strtolower($types[0])}}" style="max-width: 105vw;">
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{$image}}" class="img-fluid img-custom {{strtolower($types[0])}}" alt="{{$pokemon['name']}}">
+        <div class="col-md-4 {{strtolower($types[0])}}">
+          <img src="{{$image}}" class="img-fluid img-custom" alt="{{$pokemon['name']}}">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -62,7 +62,7 @@
                 </button>
               </p>  
               <div class="collapse" id="collapseLocations" style="margin-bottom: 10px;">
-                <div class="card card-body locations">
+                <div class="card card-body locations {{strtolower($types[0])}}">
                   <div class="row row-cols-1 row-cols-md-3 g-4">                
                     @forelse ($locations as $location)
                     <div class="col">
