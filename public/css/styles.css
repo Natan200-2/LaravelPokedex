@@ -79,8 +79,6 @@ div .details{
 
 .col-md-4{
     height: inherit;
-    max-height: 150vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center; 
