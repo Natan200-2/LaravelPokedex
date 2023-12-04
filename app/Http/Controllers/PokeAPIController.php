@@ -11,7 +11,7 @@ class PokeAPIController extends Controller
     public function index()
     {
         try {
-            $response = Http::withOptions(['verify'=>false])->get("https://pokeapi.co/api/v2/pokemon?limit=151");
+            $response = Http::withOptions(['verify'=>false])->get("https://pokeapi.co/api/v2/pokemon?limit=30");
             $data = $response->json();
         
             $pokemonDetails = collect($data['results'])->map(function ($pokemon) {
