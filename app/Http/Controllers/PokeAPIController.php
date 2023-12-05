@@ -11,7 +11,7 @@ class PokeAPIController extends Controller
     public function index()
     {
         try {
-            $response = Http::withOptions(['verify'=>false])->get("https://pokeapi.co/api/v2/pokemon?limit=30");
+        /*    $response = Http::withOptions(['verify'=>false])->get("https://pokeapi.co/api/v2/pokemon?limit=30");
             $data = $response->json();
         
             $pokemonDetails = collect($data['results'])->map(function ($pokemon) {
@@ -24,9 +24,9 @@ class PokeAPIController extends Controller
                     'name' => $pokemon['name'],
                     'types' => $this->getPokemonTypes($pokemonId),
                 ];
-            });
+            });*/
         
-            return view('welcome', ['pokemonDetails' => $pokemonDetails]);
+            return view('welcome');
             
         } catch (\Exception $e) { 
             return view('errors.pokemon_error', ['error' => $e->getMessage()]);
