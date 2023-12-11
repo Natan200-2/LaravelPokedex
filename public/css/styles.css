@@ -177,6 +177,29 @@ div .details{
     background-color: #29ADB2;
 }
 
+/*Pagination*/
+.container-pagination{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw 3vh;
+}
+
+.btn-pagination{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 5vw;
+    background-color: #a89d9e;
+    transition: .25s;
+}
+
+.btn-pagination:hover{
+    background-color: #2a40bf;
+}
+
+.btn-selected{
+    background-color: #2a40bf;
+}
+
 /*background-colors types*/
 .normal{
     background: rgb(143,143,143);

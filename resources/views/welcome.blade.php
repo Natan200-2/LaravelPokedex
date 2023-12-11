@@ -9,7 +9,7 @@
         <!-- Aqui serão exibidos os resultados da API -->
     </div>
 
-    <div id="paginationButtons" class="mt-4 btn-pagination">
+    <div id="paginationButtons" class="mt-4 container-pagination">
         <!-- Botões de paginação -->
     </div>
 
@@ -89,7 +89,7 @@
                 for (let i = 1; i <= totalPages; i++) {
                     const button = document.createElement('button');
                     button.textContent = i;
-                    button.className = `btn ${i === currentPage ? 'btn-primary' : 'btn-secondary'}`;
+                    button.className = `btn-pagination ${i === currentPage ? 'btn-selected' : ''}`;
                     button.addEventListener('click', () => loadPokemonDetails(i));
                     paginationButtonsElement.appendChild(button);
                 }
