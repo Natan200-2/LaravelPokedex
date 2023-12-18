@@ -11,39 +11,11 @@ class PokeAPIController extends Controller
     public function index()
     {
         try {
-        /*    $response = Http::withOptions(['verify'=>false])->get("https://pokeapi.co/api/v2/pokemon?limit=30");
-            $data = $response->json();
-        
-            $pokemonDetails = collect($data['results'])->map(function ($pokemon) {
-                $pokemonId = $this->extractPokemonIdFromUrl($pokemon['url']);
-                $imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{$pokemonId}.png";
-        
-                return [
-                    'id' => $pokemonId,
-                    'image_url' => $imageUrl,
-                    'name' => $pokemon['name'],
-                    'types' => $this->getPokemonTypes($pokemonId),
-                ];
-            });*/
-        
             return view('welcome');
             
         } catch (\Exception $e) { 
             return view('errors.pokemon_error', ['error' => $e->getMessage()]);
         }
-    }
-
-    private function extractPokemonIdFromUrl($url)
-    {
-        return basename($url);
-    }
-
-    private function getPokemonTypes($pokemonId)
-    {
-        $response = Http::withOptions(['verify'=>false])->get("https://pokeapi.co/api/v2/pokemon/{$pokemonId}");
-        $pokemonData = $response->json();
-
-        return collect($pokemonData["types"])->pluck('type.name')->toArray();
     }
 
     public function show($id)
