@@ -98,5 +98,32 @@
             // Chama a função para carregar os detalhes dos Pokémon na página 1 inicialmente
             loadPokemonDetails(1);
         });
+
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+            const searchTerm = document.getElementById('searchInput').value;
+            searchPokemon(searchTerm);
+        });
+
+        function searchPokemon(searchTerm) {
+            // Utilize AJAX para enviar a pesquisa à API Pokémon
+            // Atualize a página com os resultados da pesquisa
+            fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm.toLowerCase()}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Pokémon não encontrado');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Atualize a página com os resultados (pode ser informações sobre o Pokémon)
+                    console.log('Resultados da pesquisa:', data);
+                    // Implemente a lógica para atualizar a página com os resultados
+
+                    // Exemplo: redirecione para a página de detalhes do Pokémon
+                    window.location.href = `/pokemon/${data.id}`;
+                })
+                .catch(error => console.error('Erro na requisição:', error));
+        }
     </script>
 @endsection
